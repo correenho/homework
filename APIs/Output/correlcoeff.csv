@@ -1,0 +1,5 @@
+,Correlation Coefficient vs Latitude,Northern Hemisphere,Southern Hemisphere,Conclusion
+0,Max Temperature,-0.836818546,0.736165293,TRUE
+1,Humidity,-0.060298824,0.150956006,FALSE
+2,Cloudiness,0.153858013,0.163218259,FALSE
+3,Wind Speed,0.339399397,-0.185526423,FALSE
