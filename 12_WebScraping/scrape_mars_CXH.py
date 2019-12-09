@@ -44,7 +44,7 @@ def scrape():
 	df_mars=tables[0]
 	df_mars.columns=['Facts','Details']
 	df_mars.set_index('Facts')
-	html_mars=df_mars.to_html().replace('\n','')
+	html_mars=df_mars.to_html(index=False).replace('\n','')
 
 	url_5='https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars'
 	browser.visit(url_5)
