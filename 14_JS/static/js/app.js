@@ -33,22 +33,27 @@ button.on("click",function(){
 
   var comment = filteredData.map(sightings => sightings.comments);
     
-//  console.log(shape);
+  console.log(filteredData[0]);
     
   var table = d3.select("#ufo-table").select("tbody");
     
   table.html("");
+  
+  console.log(date[0]);
     
   filteredData.forEach(function(d,i) {
-    table.append("tr");
-    table.selectAll("tr").append("td").text(`${date[i]}`);
-    table.selectAll("tr").append("td").text(`${city[i]}`);
-    table.selectAll("tr").append("td").text(`${state[i]}`);
-    table.selectAll("tr").append("td").text(`${country[i]}`);
-    table.selectAll("tr").append("td").text(`${shape[i]}`);
-    table.selectAll("tr").append("td").text(`${duration[i]}`);
-    table.selectAll("tr").append("td").text(`${comment[i]}`);
+    table.append("tr").attr("id","row"+i);
+//     console.log(city[i]);
+    var selection = table.select("#row"+i);
+    selection.append("td").text(`${date[i]}`);
+    selection.append("td").text(`${city[i]}`);
+    selection.append("td").text(`${state[i]}`);
+    selection.append("td").text(`${country[i]}`);
+    selection.append("td").text(`${shape[i]}`);
+    selection.append("td").text(`${duration[i]}`);
+    selection.append("td").text(`${comment[i]}`);
 
+  })        
+    
 });
 
-})
