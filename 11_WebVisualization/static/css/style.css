@@ -1,0 +1,99 @@
+
+body {
+    background: lightgrey;
+}
+
+.box_1{
+    position: absolute;
+    height: auto;
+    width: auto;
+    padding: 50px;
+    margin-top: 20px;
+    margin-right: 50px;
+    color: lightseagreen;
+    background: white;
+}
+
+.container{
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 50px;
+    margin-left: 30px;
+    margin-top: 20px;
+    background: white;
+}
+
+.comparison_page{
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 50px;
+    margin-left: 30px;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+h1{
+    font-style: bold;
+    color: teal;
+}
+
+
+.navbar-brand {
+    padding: inherit;
+    color: white;
+    background-color: lightseagreen;
+    border-style: solid;
+    border-color: lightseagreen;
+}
+
+#landing-image {
+    float: left;
+}
+
+#figure {
+  position: relative;
+}
+
+.dataframe_container{
+    background-color: white;
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 50px;
+    margin-left: 30px;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 90%;
+    background-color: white;
+    font-family: sans-serif;
+    margin-top: 30px;
+    margin-left: 50px;
+    table-layout: auto;
+}
+
+
+tr:hover {background-color: #f5f5f5;}
+
+thead{
+    background-color: lightseagreen;
+    color: white;
+}
+
+th, td {
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  vertical-align: center;
+  border: 1px solid #ddd;
+}
